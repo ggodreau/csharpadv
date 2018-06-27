@@ -10,10 +10,12 @@ namespace LambdaExpressions
         static void Main(string[] args)
         {
             var books = new BookRepository().GetBooks();
-            Console.WriteLine(books.FindAll(ct10).Count);
-            foreach (Book biik in books.FindAll(ct10))
+            // lambda expression below
+            // not sure why you don't need Func<> with this; 
+            // couldn't get it to work that way. damnit
+            foreach (Book foo in books.FindAll(book => book.Price < 10))
             {
-                Console.WriteLine(biik.Title);
+                Console.WriteLine("Title: " + foo.Title + " price: " + foo.Price);
             }
         }
 
