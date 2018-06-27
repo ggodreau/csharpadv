@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LambdaExpressions
 {
@@ -8,15 +9,23 @@ namespace LambdaExpressions
 
         static void Main(string[] args)
         {
-            // Console.WriteLine(new Program().Squared(_n).ToString());
-
-            //Func<input_type, output_type>
-            int factor = 10;
-
-            // foo is the input argument, 20
-            Func<int, int> multiplyBy = foo => _n * factor * foo;
-            Console.WriteLine(multiplyBy(20).ToString());
+            var books = new BookRepository().GetBooks();
+            Console.WriteLine(books.FindAll(ct10).Count);
+            foreach (Book biik in books.FindAll(ct10))
+            {
+                Console.WriteLine(biik.Title);
+            }
         }
 
+        // this is my predicate, the thing that returns true
+        // if a condition is met and false otherwise.
+        // used for the List<>.FindAll(Predicate<T>) method
+        // above
+        static bool ct10(Book book)
+        // cheaper than 10 doll hairs
+        {
+            if (book.Price < 10) { return true; }
+            else { return false; }
+        }
     }
 }
