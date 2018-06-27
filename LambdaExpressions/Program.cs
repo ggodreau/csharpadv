@@ -11,13 +11,12 @@ namespace LambdaExpressions
             // Console.WriteLine(new Program().Squared(_n).ToString());
 
             //Func<input_type, output_type>
-            Func<int, int> squareDelg = Squared;
-            Console.WriteLine(squareDelg(_n).ToString());
+            int factor = 10;
+
+            // foo is the input argument, 20
+            Func<int, int> multiplyBy = foo => _n * factor * foo;
+            Console.WriteLine(multiplyBy(20).ToString());
         }
 
-        public static int Squared(int n)
-        {
-            return n * n;
-        }
     }
 }
