@@ -10,10 +10,10 @@ namespace Delegates
             var filters = new PhotoFilters();
             // tricky part; you must assign the method you want to apply
             // to the DELEGATE function
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+            Action<Photo, string> filterHandler = filters.ApplyBrightness;
             // you can treat the delegate function as a list of method objects
             // ...i.e. a stack of things to do, and you push successive methods
-            // onto it
+            // onto it. This is called multicast delegate (invocationList property)
             filterHandler += filters.ApplyContrast;
 
             // this is of type: Delegates.PhotoProcessor + PhotoFilterHandler
