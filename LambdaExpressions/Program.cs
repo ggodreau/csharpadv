@@ -8,10 +8,14 @@ namespace LambdaExpressions
 
         static void Main(string[] args)
         {
-            Console.WriteLine(new Program().Squared(_n).ToString());
+            // Console.WriteLine(new Program().Squared(_n).ToString());
+
+            //Func<input_type, output_type>
+            Func<int, int> squareDelg = Squared;
+            Console.WriteLine(squareDelg(_n).ToString());
         }
 
-        public int Squared(int n)
+        public static int Squared(int n)
         {
             return n * n;
         }
