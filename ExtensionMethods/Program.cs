@@ -10,5 +10,4 @@ namespace ExtensionMethods
             Console.WriteLine(post.Shorten(5)); // this is going to be my future extension method... hopefully
         }
     }
-
 }
