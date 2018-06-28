@@ -5,16 +5,12 @@ namespace EventsAndDelegates
 {
     public class VideoEncoder
     {
-        // how to use
-        // 1 - define a delegate
-        // 2 - define an event based on that delegate
-        // 3 - raise the event
 
-        // 1: define the delegate
-        public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
-
-        // 2: define the event based on the above delegate (it is of return type 'event')
-        public event VideoEncodedEventHandler VideoEncoded;
+        // the (object source) arguments are implicit with EventHandler<>
+        // below is the NON-generic form
+        public event System.EventHandler<VideoEventArgs> VideoEncoded;
+        // here is the GENERIC form, which you'd use if you didn't need to pass args
+        // public event System.EventHandler VideoEncoded;
 
         public void Encode(Video video)
         {
@@ -33,7 +29,6 @@ namespace EventsAndDelegates
             // check to see if there are any pre-existing subscribers
             if(VideoEncoded != null)
             {
-                // use EventArgs.Empty, not null here
                 var vidArgs = new VideoEventArgs();
                 vidArgs.video = video;
                 VideoEncoded(this, vidArgs);
