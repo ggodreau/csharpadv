@@ -11,7 +11,7 @@ namespace EventsAndDelegates
         // 3 - raise the event
 
         // 1: define the delegate
-        public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+        public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
 
         // 2: define the event based on the above delegate (it is of return type 'event')
         public event VideoEncodedEventHandler VideoEncoded;
@@ -22,20 +22,26 @@ namespace EventsAndDelegates
             Thread.Sleep(3000);
 
             // call the event handler
-            OnVideoEncoded();
+            OnVideoEncoded(video);
         }
 
         // 3: - raise the event. .NET convention is to make this
         // a protected, virtual, void method. They also are named
         // 'On____', like OnThingFinished
-        protected virtual void OnVideoEncoded()
+        protected virtual void OnVideoEncoded(Video video)
         {
             // check to see if there are any pre-existing subscribers
             if(VideoEncoded != null)
             {
                 // use EventArgs.Empty, not null here
-                VideoEncoded(this, EventArgs.Empty);
+                var vidArgs = new VideoEventArgs();
+                vidArgs.video = video;
+                VideoEncoded(this, vidArgs);
             }
         }
+    }
+    public class VideoEventArgs : EventArgs
+    {
+        public EventsAndDelegates.Video video { get; set; }
     }
 }
