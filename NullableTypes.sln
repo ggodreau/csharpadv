@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{9A5D442E-0690-485B-9432-A87FA48DEEB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A5D442E-0690-485B-9432-A87FA48DEEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A5D442E-0690-485B-9432-A87FA48DEEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A5D442E-0690-485B-9432-A87FA48DEEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A5D442E-0690-485B-9432-A87FA48DEEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7564F6EE-DD32-455C-8617-5075BE8E8901}
+		SolutionGuid = {E561D898-1C87-40A4-9675-7217826BF224}
 	EndGlobalSection
 EndGlobal
