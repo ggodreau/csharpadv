@@ -24,7 +24,7 @@ namespace Linq
                 .Select(b => b.Title))
             { Console.WriteLine(title); };
 
-            // linq query operators
+            // linq query operators - they start with FROM and end with SELECT
             Console.WriteLine("linq query operator below: ===");
             var cheaperBooks =
                 from b in myBooks
@@ -34,10 +34,18 @@ namespace Linq
 
             foreach (string title in cheaperBooks) { Console.WriteLine(title); }
 
+            // practice with Take() and Skip()
+            foreach (Book book in new BookRepository().GetBooks().Take(2)) { Console.WriteLine("take " + book.Title); }
+            foreach (Book book in new BookRepository().GetBooks().Skip(1).Take(2)) { Console.WriteLine("skip/take " + book.Title); }
+
             // other helpful methods in Linq
             // .First() - gets the first element in an array (you can optionally put a filter condition in here, and it'll return the first from the filtered list)
             // .FirstOrDefault() - gets the first, but if the first isn't there it throws exception instead of crashing
             // .Single() / SingleOrDefault() - gets the only result ONLY IF there is a single result (including filters); otherwise throws InvalidOperationException
+            // .Last() / .LastOrDefault() - gets the last item in the list of returned values
+            // .Skip(int) - skips int elements in the returned/filtered list
+            // .Take(int) - takes int elements and returns them
+            // .Count() - returns the number of elements in the (filtered) list
         }
     }
 }
