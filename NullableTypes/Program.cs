@@ -6,23 +6,21 @@ namespace NullableTypes
     {
         static void Main(string[] args)
         {
+            DateTime? date = null;
+            DateTime date2;
 
-            // can't set value types to null; the below won't work
-            // DateTime birthday = null;
+            // won't work
+            // if(date != null) { date2 = date; }
+            
+            // this does work tho; it is the long form of the null coalescing operator
+            if(date != null) { date2 = date.GetValueOrDefault(); }
+            else { date = DateTime.Today; }
 
-            // have to use Nullable as below
-            System.Nullable<DateTime> nullday = null;
-            Console.WriteLine("nullday = " + nullday);
-
-            // or the shorthand is to use a question mark following the datatype
-            DateTime? birthday = null;
-            Console.WriteLine("birthday = " + birthday);
-
-            // lets get the values
-            Console.WriteLine("getvalordef = " + birthday.GetValueOrDefault());
-            Console.WriteLine("hasval? = " + birthday.HasValue);
-            // below will return a null reference exception error
-            // Console.WriteLine("val = " + birthday.Value);
+            // null coalescing operator (double ??'s). behaves like below code (ternary operator)
+            // variable = condition ? ifTrue : ifFalse
+            // date2 = (date != null) ? date.GetValueOrDefault() : DateTime.Now;
+            date2 = date ?? DateTime.UtcNow;
+            Console.WriteLine(date2);
         }
     }
 }
