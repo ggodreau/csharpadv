@@ -45,7 +45,10 @@ namespace Linq
             // .Last() / .LastOrDefault() - gets the last item in the list of returned values
             // .Skip(int) - skips int elements in the returned/filtered list
             // .Take(int) - takes int elements and returns them
+            // AGGREGATE FUNCTIONS:
             // .Count() - returns the number of elements in the (filtered) list
+            // .Min() / .Max() / .Sum() / .Average()
+            
         }
     }
 }
