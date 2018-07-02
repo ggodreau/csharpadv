@@ -27,6 +27,7 @@ namespace Async
             InitializeComponent();
         }
 
+        // BLOCKING synchronous method below
         public void DownloadHtml(string url)
         {
             var webClient = new WebClient();
@@ -38,9 +39,24 @@ namespace Async
             }
         }
 
-        private void myButt_Click(object sender, RoutedEventArgs e)
+        // NON-BLOCKING async method below
+        // all async methods have 'async' modifier. The 'Task' return type is 'Task'
+        // for a void (no return), and Task<string> or similar for a return type
+        // Don't forget to put the await keywords in front of your <METHOD>async.()
+        public async Task DownloadHtmlAsync(string url)
         {
-            DownloadHtml("http://msdn.microsoft.com");
+            var webClient = new WebClient();
+            var html = await webClient.DownloadStringTaskAsync(url);
+
+            using (var sr = new StreamWriter("C:\\Users\\user\\Documents\\udemy\\csharpadv\\out.txt"))
+            {
+                await sr.WriteAsync(html);
+            }
+        }
+
+        private async void myButt_Click(object sender, RoutedEventArgs e)
+        {
+            await DownloadHtmlAsync("http://www.github.com");
             Console.WriteLine("clicked my butt!");
             myLabel.Content = "finished downloading!";
         }

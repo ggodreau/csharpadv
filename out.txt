@@ -1,797 +1,881 @@
-<!DOCTYPE html>        
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-pCRDtdb3GlUU48h+oRJVA8f0GddrLnU97wB7mHQ7q6c40vMbMMZsFdk0IMhkUFRqw1M/y4EkWxtaKwfeFezOkQ==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-73f533b7cc08a9d040e601cfd38fa585.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-nUvkp2PexYbw89MufeRxmfin9hSOvl3FE5lBzRkchoc167hrmpRMEVZnnhBnPF/5j92OT1uMlqP8xYlUILCLHw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-97d6f28221b9753a523a134a3f7f3a3b.css" />
+  
+  
+  <link crossorigin="anonymous" media="all" integrity="sha512-YBQhG++AtbZ1OJfwAkSqS9GCbbYzicxNDYKdMaLTV49eF0Lks0Bs9Egbu46uQi62AyUInQS8Cx6GGkK6uZnqFQ==" rel="stylesheet" href="https://assets-cdn.github.com/assets/site-14cf418638c848dd5bbac72b6f77dfa2.css" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>The worldâ€™s leading software development platform Â· GitHub</title>
+    <meta name="description" content="GitHub brings together the worldâ€™s largest community of developers to discover, share, and build better software. From open source projects to private team repositories, weâ€™re your all-in-one platform for collaborative development.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta property="og:url" content="https://github.com">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description" content="GitHub is where people build software. More than 28 million people use GitHub to discover, fork, and contribute to over 85 million projects.">
+    <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+    <meta property="og:image" content="https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="94B0:46F8:2B381C9:45A26B9:5B3AA8D5" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="/" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="94B0:46F8:2B381C9:45A26B9:5B3AA8D5" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
+
+
+
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MTgwYjQyZTgyMjJlNjU4MmVkODAyNmU5YTg1ZDBiY2EyZGJiZmJmMTc1YjQyM2U3ZmIyM2YwM2M5MzVjZjMzM3x7InJlbW90ZV9hZGRyZXNzIjoiNjMuNjUuMTIwLjIyIiwicmVxdWVzdF9pZCI6Ijk0QjA6NDZGODoyQjM4MUM5OjQ1QTI2Qjk6NUIzQUE4RDUiLCJ0aW1lc3RhbXAiOjE1MzA1NzA5NjYsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SEARCH,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="afecba2b8f467a69daa40f840b66da595af6e715">
+
+  <meta http-equiv="x-pjax-version" content="67ce8c7fcd8b070d8c85f19e4d85d12d">
+  
+
+      <meta name="viewport" content="width=device-width">
+  <link crossorigin="anonymous" media="all" integrity="sha512-YBQhG++AtbZ1OJfwAkSqS9GCbbYzicxNDYKdMaLTV49eF0Lks0Bs9Egbu46uQi62AyUInQS8Cx6GGkK6uZnqFQ==" rel="stylesheet" href="https://assets-cdn.github.com/assets/site-14cf418638c848dd5bbac72b6f77dfa2.css" />
+
+
+    <link rel="canonical" href="https://github.com/" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive min-width-0 f4">
     
-    <html dir="ltr" lang="en" data-amd-enabled="true" xmlns="http://www.w3.org/1999/xhtml">
-    <head><link rel="canonical" href="https://msdn.microsoft.com/en-us/dn308572.aspx" />
-        <title>Learn to Develop with Microsoft Developer Network | MSDN</title>
-        
 
-<meta name="DCS.dcsuri" content="/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
-
-<meta name="MN" content="FB361393-2:30:20 PM" />
-
-<meta name="ms.assetid" content="153034a4-6dd7-42d4-9397-bb50d30a478d" />
-
-<meta name="ms.auth" content="0" />
-
-<meta name="ms.contentlang" content="EN" />
-
-<meta name="ms.lang" content="EN" />
-
-<meta name="ms.loc" content="US" />
-
-<meta name="ms.locale" content="en-us" />
-
-<meta name="ms.normalizedurl" content="https://msdn.microsoft.com/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
-
-<meta name="ms.prodver" content="MSDN.10" />
-
-<meta name="ms.shortidmsdn" content="dn308572" />
-
-<meta name="ms.sitever" content="2018.05.23.1" />
-
-<meta name="NormalizedUrl" content="https://msdn.microsoft.com/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
-
-<meta name="search.content.locale" content="en-us" />
-
-<meta name="search.content.shortId" content="dn308572" />
-
-<meta name="Search.MSCategory" content="dn305830" />
-
-<meta name="Search.MSCategory" content="dn308572" />
-
-<meta name="Search.MSCategory" content="dn753799" />
-
-<meta name="Search.ShortId" content="dn308572" />
-
-<meta name="Search.TocNodeId" content="dn308572" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<meta name="VotingContextUrl" content="https://msdn.microsoft.com/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
-        <meta http-equiv="content-language" content="en" />
-        
-        
-        
-        
-    
-
-        <script type="text/javascript" data-do-not-move="true">
-            //<![CDATA[
-            var AmbientContext = null;
-
-            (function () {
-                var root = (function () { return this; }).call(null);
-
-                var GetCookie = function (name) {
-                    var cookies = root.document.cookie ? root.document.cookie.split('; ') : [];
-                    for (var i = 0; i < cookies.length; i++) {
-                        var pos = cookies[i].indexOf('=');
-                        if (name === root.decodeURIComponent(cookies[i].slice(0, pos))) {
-                            var cookie = cookies[i].slice(pos + 1).replace(/\+/g, ' ');
-                            cookie = root.decodeURIComponent(cookie);
-                            return cookie;
-                        }
-                    }
-                };
-
-                var JsonDeserialize = function (content) {
-                    return root.JSON && root.JSON.parse ? root.JSON.parse(content) : (new Function('return (' + content + ')'))();
-                };
-
-                try {
-                    AmbientContext = GetCookie('AmbientContext');
-                    AmbientContext = AmbientContext && JsonDeserialize(AmbientContext);
-                } catch (ex) {
-                } finally {
-                    AmbientContext = AmbientContext || null;
-                }
-            })();
-            //]]>
-        </script>
-        
-
-        
-        
-
-        
-        
-        
-        
-        
-        
-        <script type="text/javascript" data-do-not-move="true">
-            //<![CDATA[
-            window.appInsightsId = 'f1505ffb-5942-4877-9717-de45ab5d843b';
-            //]]>
-        </script>
-        
-
-        
-
-    <link rel="stylesheet" type="text/css" href="https://uhf.microsoft.com/mscc/statics/mscc-0.4.0.min.css" /><link rel="stylesheet" type="text/css" href="https://docs.microsoft.com/msdn-files/feeds/MSDN/en-us/home/home_2017-08.css" /><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Reset,0:Layout,1:ImageSprite,1:MsdnLayout,2:jquery-ui-1.10.3.custom,3:Header,3:HeaderFooterSprite,3:Header.MediaQueries,4:Banner.MediaQueries,2:Breadcrumbs,1:Breadcrumbs,5:NoTemplate,3:Footer,3:Footer.MediaQueries,5:NewFooterSock,5:NewFooterSock.MediaQueries,5:LinkList;/Areas/Centers/Themes/Base/Content:0,/Areas/Centers/Themes/MsdnBase/Content:1,/Areas/Epx/Content/Css:2,/Areas/Centers/Themes/StandardDevCenter/Content:3,/Areas/Epx/Shared/Content:4,/Areas/Epx/Themes/Base/Content:5&amp;amp;v=55D681659F462E914F5F402499A1C12B" /><script type="text/javascript" src="https://i2-msdn.sec.s-msft.com/Areas/Global/Content/Loader.js" class="mtps-injected"></script><script type="text/javascript" class="mtps-injected">
-/*<![CDATA[*/
-(function() {
-	window.mtpsAmd = true;
-	var amdCombinedUrl = "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:JSLLRecord,0:FixJQueryMobileDefaultScroll,2:Layout,1:responsive,2:SearchBox,3:Header,2:Rating,2:NewFooterSock,3:Footer;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Epx/Themes/Base/Content:2,/Areas/Centers/Themes/StandardDevCenter/Content:3&amp;hashKey=2EE32598AC477E1F2C1150AC9A9A3FBC&amp;v=AE8D9F6970556B3A5B299DADA48AD26A";
-
-	require.config({ paths: { utilities: amdCombinedUrl, jSLLRecord: amdCombinedUrl, fixJQueryMobileDefaultScroll: amdCombinedUrl, layout: amdCombinedUrl, responsive: amdCombinedUrl, searchBox: amdCombinedUrl, searchBoxJss: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox&btnid=HeaderSearchButton&minimumTermLength=2&pgArea=header&brand=Msdn&loc=en-us&focusOnInit=false&emptyWatermark=true&searchButtonTooltip=Search MSDN", header: amdCombinedUrl, rating: amdCombinedUrl, newFooterSock: amdCombinedUrl, footer: amdCombinedUrl, broker: "https://www.microsoft.com/library/svy/sto/https/broker.js" }, ignoreDuplicateModules: ["utilities", "layout"] });
-
-	require.config({ shim: { "searchBoxJss": { exports: "searchBoxJss" }, "broker": { exports: "broker" }} });
-
-	require(["jSLLRecord"], function() {});
-	require(["fixJQueryMobileDefaultScroll"], function() {});
-	require(["responsive"], function() {});
-	require(["searchBox"], function() {});
-	require(["searchBoxJss"], function() {});
-	require(["header"], function() {});
-	require(["rating"], function() {});
-	require(["newFooterSock"], function() {});
-	require(["footer"], function() {});
-	require(["broker"], function() {});
-}());
-/*]]>*/
-</script></head>
-    <body class="">
-        <div id="page">
-            
-
-
-            
-
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
 
     
-    <link type="text/css" rel="stylesheet" />
     
-        
-        
-    <input type="hidden" id="isHeaderBleeding" value="true" />
-    <div id="ux-header" dir="ltr" class="ltr msdn" ms.pgarea="header">
-        
-            
-            
-        <div id="ux-banner">
-            <div id="msccBanner" dir="ltr" data-site-name="msdn.microsoft.com" data-mscc-version="0.4.0" data-nver="aspnet-3.0.0" data-sver="0.1.2" class="cc-banner" role="alert"><div class="cc-container"><svg class="cc-icon cc-v-center" x="0px" y="0px" viewBox="0 0 44 44" height="30px" fill="none" stroke="currentColor"><circle cx="22" cy="22" r="20" stroke-width="2"></circle><line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line><line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line></svg> <span class="cc-v-center cc-text">This site uses cookies for analytics, personalized content and ads. By continuing to browse this site, you agree to this use.</span> <a href="https://go.microsoft.com/fwlink/?linkid=845480" aria-label="Learn more about Microsoft's Cookie Policy" id="msccLearnMore" class="cc-link cc-v-center cc-float-right" data-mscc-ic="false">Learn more</a></div></div>
-        </div>
+    
 
-      <header>
-        <span id="singleCol"></span>
-        <span id="doubleCol"></span>
-        <span id="isMobile"></span>
-        <div>
-          <div class="row topRow" role="banner">
-            <div class="top">
-              <div class="left">
-                <a class="msdnLogoImg" href="https://msdn.microsoft.com/en-us" title="MSDN home" ms.cmpgrp="mslogo">
-                  <div class="clip70x15">
-                    <img alt="Microsoft Logo" id="msft-logo" class="msft-logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636626356002217936" />
-                  </div>
-                </a>
-                <div class="GrayPipeDiv clip1x18">
-                  <img alt="Gray Pipe" class="GrayPipe" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636626356002217936" />
-                </div>
-                  <a class="DevCenterFullNameNonMegaBlade" href="https://msdn.microsoft.com/en-us">Developer Network</a>
-                <a class="DevCenterFullName" href="https://msdn.microsoft.com/en-us">Developer Network</a>
-                <a class="DevCenterShortName" href="https://msdn.microsoft.com/en-us">Developer</a>
-              </div>
-              <div class="right" ms.cmpgrp="aux nav">
-                <div class="auxNav">
-                  <div>
-                    <div data-fragmentName="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
-  <a href="https://my.visualstudio.com/?wt.mc_id=o~msft~msdn~nav~subscriber&amp;campaign=o~msft~msdn~nav~subscriber" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">
-    <p xmlns="">Subscriber portal</p>
-  </a>
-</div>
-                    <div data-fragmentName="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
-  <a href="https://www.visualstudio.com/free-developer-offers/" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">Get tools</a>
-</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
+        <header class="Header header-logged-out js-details-container Details position-relative f4 py-3" role="banner">
+  <div class="container-lg d-lg-flex p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
 
           </div>
-          <div class="row middleRow">
-            <div class="expandTop">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
-          </div>
-        </div>
-        <div id="buttomRowWrapper" class="bg_default">
-          <div class="row buttomRow bg_default">
-            <div class="bottom">
-              <div class="left" role="navigation" aria-label="header toc" ms.cmpgrp="main nav">
-                <a id="grip" class="menu-icon" href="javascript:void(0)" role="button" aria-label="navigation menu" data-mscc-ic="false"></a>
-                
-                <div id="drawer">
-                  <div class="toc">
-                    
-        <nav>
-            <ul class="navL1">
-                        <li class="inactive toggle">
-                                <a href="javascript:void(0)" role="button" aria-expanded="false" data-mscc-ic="false">Downloads</a>
-                                <ul class="navL2">
-                                        <li class="inactive">
 
-                                                <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" role="link" title="Visual Studio">Visual Studio</a>
-                                        </li>
-                                        <li class="inactive">
+        <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+        </button>
+    </div>
 
-                                                <a href="https://msdn.microsoft.com/microsoft-sdks-msdn" role="link" title="SDKs">SDKs</a>
-                                        </li>
-                                        <li class="inactive toggle">
+    <div class="HeaderMenu HeaderMenu--bright d-lg-flex flex-justify-between flex-auto">
+        <nav class="mt-3 mt-lg-0">
+          <ul class="d-lg-flex list-style-none">
+              <li class="ml-lg-2">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-3 py-lg-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features" href="/features">
+                  Features
+</a>              </li>
+              <li class="ml-lg-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-3 py-lg-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business" href="/business">
+                  Business
+</a>              </li>
 
-                                                <a href="javascript:void(0)" title="Trial software" role="button" aria-expanded="false" data-mscc-ic="false">Trial software</a>
-                                                <ul class="navL3">
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/evalcenter" title="Free downloads" role="link">Free downloads</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/officeevaluationresources" title="Office resources" role="link">Office resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/sharepoint2013resources" title="SharePoint Server 2013 resources" role="link">SharePoint Server 2013 resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/sqlserver2014expressresources" title="SQL Server 2014 Express resources" role="link">SQL Server 2014 Express resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/windowsserver2012r2resources" title="Windows Server 2012 resources" role="link">Windows Server 2012 resources</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-                                </ul>
-                        </li>
-                        <li class="inactive toggle">
-                                <a href="javascript:void(0)" role="button" aria-expanded="false" data-mscc-ic="false">Programs</a>
-                                <ul class="navL2">
-                                        <li class="inactive toggle">
+              <li class="ml-lg-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-3 py-lg-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                  Explore
+</a>              </li>
 
-                                                <a href="javascript:void(0)" title="Subscriptions" role="button" aria-expanded="false" data-mscc-ic="false">Subscriptions</a>
-                                                <ul class="navL3">
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/msdn-subscriptions-overview" title="Overview" role="link">Overview</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/msdn-subscriptions-administration" title="Administrators" role="link">Administrators</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-                                        <li class="inactive toggle">
-
-                                                <a href="javascript:void(0)" title="Students" role="button" aria-expanded="false" data-mscc-ic="false">Students</a>
-                                                <ul class="navL3">
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/imagine/imagine-home" title="Microsoft Imagine" role="link">Microsoft Imagine</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/microsoftstudentpartners" title="Microsoft Student Partners" role="link">Microsoft Student Partners</a>
-                                                        </li>
-                                                </ul>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://msdn.microsoft.com/applicationbuilder" role="link" title="ISV">ISV</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://www.microsoft.com/bizspark" role="link" title="Startups">Startups</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://events.microsoft.com/" role="link" title="Events">Events</a>
-                                        </li>
-                                </ul>
-                        </li>
-                        <li class="inactive toggle">
-                                <a href="javascript:void(0)" role="button" aria-expanded="false" data-mscc-ic="false">Community</a>
-                                <ul class="navL2">
-                                        <li class="inactive">
-
-                                                <a href="https://msdn.microsoft.com/magazine/dd767791" role="link" title="Magazine">Magazine</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://social.msdn.microsoft.com/forums/" role="link" title="Forums">Forums</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://blogs.msdn.microsoft.com/" role="link" title="Blogs">Blogs</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://channel9.msdn.com/" role="link" title="Channel 9">Channel 9</a>
-                                        </li>
-                                </ul>
-                        </li>
-                        <li class="inactive toggle">
-                                <a href="javascript:void(0)" role="button" aria-expanded="false" data-mscc-ic="false">Documentation</a>
-                                <ul class="navL2">
-                                        <li class="inactive">
-
-                                                <a href="https://msdn.microsoft.com/library" role="link" title="APIs and reference">APIs and reference</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://msdn.microsoft.com/developer-centers-msdn" role="link" title="Dev centers">Dev centers</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://code.msdn.microsoft.com/" role="link" title="Samples">Samples</a>
-                                        </li>
-                                        <li class="inactive">
-
-                                                <a href="https://msdn.microsoft.com/mt703209" role="link" title="Retired content">Retired content</a>
-                                        </li>
-                                </ul>
-                        </li>
-            </ul>
+              <li class="ml-lg-4">
+                    <a class="js-selected-navigation-item HeaderNavlink px-0 py-3 py-lg-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace" href="/marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-lg-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-3 py-lg-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing" href="/pricing">
+                  Pricing
+</a>              </li>
+          </ul>
         </nav>
 
-                  </div>
-                </div>
-              </div>
-              <div class="right" ms.title="search" role="search">
-                <div data-fragmentName="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
-  <div class="SearchBox">
-    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
-      <button id="FakeHeaderSearchButton" value="Search" type="submit" class="header-search-button" role="button" aria-label="search finder">
-        <div id="search-finder-div" class="clip16x20">
-          <img alt="search finder" id="search-finder" class="search-finder" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636626356002217936" />
-        </div>
-      </button>
-      <button id="HeaderSearchButton" style="display:none"></button>
-      <div id="searchSplitter"></div>
-      <div id="searchCloseIconDiv" class="clip16x20" tabindex="0">
-        <img alt="search clear" id="searchCloseIcon" class="search-clear-x" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636626356002217936" />
-      </div>
-      <div id="searchTextContainer" style="width: 0;">
-        <input id="HeaderSearchTextBox" name="query" type="text" aria-label="search edit textbox" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" />
-      </div>
-    </form>
-    
-    
-  </div>
-</div>
-              </div>
+      <div class="d-lg-flex">
+          <div class="d-lg-flex flex-items-center mr-lg-3">
+            <div class="header-search   js-site-search position-relative js-jump-to"
+  role="search combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="true"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-unscoped-search-url="/search" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus "
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search GitHub"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=0uJWOrZosa2LOXZdsSzPWpJv3FQZhisxDR/7mGGuIcO+78vZFFC8a0cmXKE7341rDRGwwB5SHJ0LYi+sbAX4AA=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://assets-cdn.github.com/images/search-shortcut-hint.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              <ul class="d-none js-jump-to-suggestions-template-container">
+                <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item">
+                  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center p-2 jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open" href="">
+                    <div class="jump-to-octicon js-jump-to-octicon mr-2 text-center d-none"></div>
+                    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar" alt="" aria-label="Team" src="" width="28" height="28">
+
+                    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden no-wrap css-truncate css-truncate-target">
+                    </div>
+
+                    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+                      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in all of GitHub">
+                        Search
+                      </span>
+                      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+                        All GitHub
+                      </span>
+                      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">â†µ</span>
+                    </div>
+
+                    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+                      Jump to
+                      <span class="d-inline-block ml-1 v-align-middle">â†µ</span>
+                    </div>
+                  </a>
+                </li>
+                <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-repo-octicon-template" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+                <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-project-octicon-template" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+                <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-search-octicon-template" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+              </ul>
+              <ul class="d-none js-jump-to-no-results-template-container">
+                <li class="d-flex flex-justify-center flex-items-center p-3 f5 d-none">
+                  <span class="text-gray">No suggested jump to results</span>
+                </li>
+              </ul>
+
+              <ul id="jump-to-results" class="js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container" >
+                <li class="d-flex flex-justify-center flex-items-center p-0 f5">
+                  <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+                </li>
+              </ul>
             </div>
+      </label>
+</form>  </div>
+</div>
+
           </div>
-        </div>
 
-      </header>
-
+        <span class="d-block d-lg-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-home" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
     </div>
+  </div>
+</header>
 
-    
-    
-    
-    <div id="jumpInfo" style="display: none">Weâ€™re sorry. The content you requested has been removed. Youâ€™ll be auto redirected in 1 second.</div>
+  </div>
 
-            
-  
+  <div id="start-of-content" class="show-on-focus"></div>
 
-
-
+    <div id="js-flash-container">
+</div>
 
 
 
-            <div id="content">
-                
+  <div role="main" class="application-main ">
+        
+<div class="py-6 py-sm-8 py-lg-10 py-xl-12 jumbotron-codelines">
+  <div class="container-lg p-responsive position-relative">
+    <div class="d-md-flex flex-items-center gutter-md-spacious">
+      <div class="col-md-7 text-center text-md-left ">
+        <h1 class="alt-h0 text-white lh-condensed-ultra mb-3">Built for developers</h1>
+        <p class="alt-lead mb-4">
+          GitHub is a development platform inspired by the way you work. From <a href="/open-source" class="text-white jumbotron-link">open source</a> to <a href="/business" class="text-white jumbotron-link">business</a>, you can host and review code, manage projects, and build software alongside millions of other&nbsp;developers.
+        </p>
+      </div>
+        <div class="mx-auto col-sm-8 col-md-5 hide-sm">
+          <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md-3 px-lg-4">
+            <form class="home-hero-signup js-signup-form" autocomplete="off" action="/join" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="cNAbysdqiFNGFz7xH0VRe1PxnDOhLmR5mUWgxneWX+O8/i89ZBUxhF2PAWPl92p76LC02hQ4yopLf+Q220TsAQ==" />              <dl class="form-group mt-0">
+                <dt class="input-label">
+                  <label class="form-label f5" for="user[login]">Username</label>
+                </dt>
+                <dd>
+                  <auto-check src="/signup_check/username" csrf="Kme39gQcMQFWhReUl1XnTKEVkacoCcCX+NUrZOWfukRic4VWn0wA25lFW170AEBUcjNejAi9xS3SfYayEdm4IA==">
+                    <input type="text" name="user[login]" id="user[login]" class="form-control form-control-lg input-block" placeholder="Pick a username" autofocus>
+                  </auto-check>
+                </dd>
+              </dl>
+              <dl class="form-group">
+                <dt class="input-label">
+                  <label class="form-label f5" for="user[email]">Email</label>
+                </dt>
+                <dd>
+                  <auto-check src="/signup_check/email" csrf="UM9bdiR2kaHz1yPzoU58GGRtZIrybSVGNUx54EH5qZVEOZMQflzgx27o/da2owqWlpiv16y2PwtV9Q/bk5VkSw==">
+                    <input type="text" name="user[email]" id="user[email]" class="form-control form-control-lg input-block js-email-notice-trigger" placeholder="you@example.com">
+                  </auto-check>
+                </dd>
+              </dl>
+              <dl class="form-group">
+                <dt class="input-label">
+                  <label class="form-label f5" for="user[password]">Password</label>
+                </dt>
+                <dd>
+                  <auto-check src="/signup_check/password" csrf="VzpKT8rhKYljKt1NmZvUThA3kItiGsCx+YUu/OpjyHWa7911/vCYSC8iEpvIS+WICLHb2I+jnTe1tbFkXcBkGA==">
+                    <input type="password" name="user[password]" id="user[password]" class="form-control form-control-lg input-block" placeholder="Create a password">
+                  </auto-check>
+                </dd>
+                <p class="form-control-note">Use at least one letter, one numeral, and seven characters.</p>
+              </dl>
+              <input type="hidden" name="source" class="js-signup-source" value="form-home">
+              <input type="text" name="required_field_888c" id="required_field_888c" hidden="hidden" class="form-control" />
+<input type="hidden" name="timestamp" value="1530570966007" class="form-control" />
+<input type="hidden" name="timestamp_secret" value="c5c04019eb617761afff484561927281defa5319e662cd003cbbcd054be4802a" class="form-control" />
 
-
-
-
-
-
-
-    
-<div class="navpage" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="" id="Fragment_HeroHeadlines" data-fragmentname="HeroHeadlines">
-    <div>
-      <div>
-        <div data-fragmentname="herocontent" id="Fragment_herocontent">
-          <div class="RichText">
-            <div class="heropaneltext">
-              <h1>
-                <a href="https://developer.microsoft.com/">developer.microsoft.com</a>
-              </h1>
-              <p>
-                <a href="https://developer.microsoft.com/">Any Developer. Any App. Any Platform.</a>
+              <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Signup, Attempt, location:teams;">Sign up for GitHub</button>
+              <p class="form-control-note mb-0 text-center">
+                By clicking &ldquo;Sign up for GitHub&rdquo;, you agree to our
+                <a class="" href="https://help.github.com/terms" target="_blank">terms of service</a> and
+                <a class="" href="https://help.github.com/privacy" target="_blank">privacy statement</a>. <span class="js-email-notice">Weâ€™ll occasionally send you account related emails.</span>
               </p>
-            </div>
-            <div class="heropanelimg">
-              <p>
-                <a href="https://developer.microsoft.com/">
-                  <img alt="developer.microsoft.com" id="TabletBinaryCodeCitySkylineCloudGuy" src="https://i-msdn.sec.s-msft.com/dynimg/IC866065.png" title="developer.microsoft.com" xmlns="http://www.w3.org/1999/xhtml" />
-                </a>
-              </p>
-            </div>
+
+</form>          </div>
+        </div>
+        <div class="d-sm-none text-center">
+          <a rel="nofollow" class="btn btn-primary btn-large border-0" data-ga-click="Signup, Attempt, location:jumbotron;" href="/join?source=button-home">Sign up for GitHub</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-lg p-responsive py-4 text-center text-md-left">
+  <div class="col-md-8 col-lg-7 mx-auto d-md-flex flex-items-center">
+    <img src="https://assets-cdn.github.com/images/modules/site/tenyears/10.png" alt="10" class="col-6 col-sm-4 mx-auto width-fit">
+    <div class="pl-md-4">
+      <h4 class="alt-h3 mb-2">Thank you for 10 years</h4>
+      <p class="mb-2">Weâ€™re celebrating 10 years of code, commits, and collaboration.</p>
+      <p class="mb-0"><a href="/ten">See some of our favorite&nbsp;moments <svg height="14" class="octicon octicon-chevron-right ml-1 v-align-text-bottom" viewBox="0 0 8 16" version="1.1" width="7" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg></a></p>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container-lg p-responsive">
+  <div class="text-center py-7 py-md-8 py-lg-9 ">
+    <h3 class="alt-h3 text-gray-light mb-4 lh-condensed">
+      More than 1.8 million businesses and organizations use GitHub
+    </h3>
+    <ul class="d-flex flex-justify-center flex-items-center flex-wrap list-style-none mt-2 mt-md-3 grayscale">
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/airbnb-logo.png" alt="Airbnb" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/sap-logo.png" alt="SAP" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/ibm-logo.png" alt="IBM" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/google-logo.png" alt="Google" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/paypal-logo.png" alt="PayPal" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/bloomberg-logo.png" alt="Bloomberg" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/spotify-logo.png" alt="Spotify" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/swift-logo.png" alt="Swift" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/facebook-logo.png" alt="Rails" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/node-logo.png" alt="Node" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/nasa-logo.png" alt="Nasa" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+      <li><img src="https://assets-cdn.github.com/images/modules/site/logos/walmart-logo.png" alt="Walmart" class="logo-img-sm px-2 px-sm-4 px-md-5 my-md-3"></li>
+    </ul>
+  </div>
+</div>
+
+<div class="py-7 py-md-8 py-lg-9 border-top">
+  <div class="container-lg p-responsive pb-6">
+    <h6 class="alt-h4 text-normal text-gray text-center">
+      GitHub for teams
+    </h6>
+    <h2 class="alt-h1 lh-condensed mt-3 mb-2 text-center">
+      A better way to work together
+    </h2>
+    <p class="lead text-center col-md-8 mx-auto">
+      GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.
+    </p>
+    <div class="text-center">
+        <a class="btn btn-large btn-outline" data-ga-click="Signup, Attempt, location:teams;" href="/join?plan=business&amp;setup_organization=true&amp;source=business-page">Sign up your team</a>
+    </div>
+  </div>
+
+  <div class="container-xl p-responsive">
+    <div class="position-relative overflow-hidden d-lg-flex pt-6">
+      <div class="col-10 col-sm-7 mx-auto mx-lg-6 mb-sm-3">
+        <img src="https://assets-cdn.github.com/images/modules/site/home-illo-team.svg" alt="" class="d-block width-fit mx-auto">
+      </div>
+      <div class="col-lg-5">
+        <a href="/features/code-review" class="summarylink">
+          <div class="summarylink-illustration">
+            <img src="https://assets-cdn.github.com/images/modules/site/home-illo-team-code.svg" alt="" class="width-fit mx-auto">
           </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+            <div class="col-10">
+              <h3 class="alt-h3 mb-1">Write better code</h3>
+              <p class="mb-0">Collaboration makes perfect. The conversations and code reviews that happen in Pull Requests help your team share the weight of your work and improve the software you build. <span class="text-blue">Learn about code review.</span></p>
+            </div>
+            <svg class="octicon octicon-triangle-right text-blue" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+        <a href="/features/project-management" class="summarylink">
+          <div class="summarylink-illustration">
+            <img src="https://assets-cdn.github.com/images/modules/site/home-illo-team-chaos.svg" alt="" class="width-fit mx-auto">
+          </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+            <div class="col-10">
+              <h3 class="alt-h3 mb-1">Manage your chaos</h3>
+              <p class="mb-0">Take a deep breath. On GitHub, project management happens in Issues and Projects, right alongside your code. All you have to do is mention a teammate to get them involved. <span class="text-blue">Learn about project management.</span></p>
+            </div>
+            <svg class="octicon octicon-triangle-right text-blue" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+        <a href="/features/integrations" class="summarylink">
+          <div class="summarylink-illustration">
+            <img src="https://assets-cdn.github.com/images/modules/site/home-illo-team-tools.svg" alt="" class="width-fit mx-auto">
+          </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4 my-4 my-sm-0">
+            <div class="col-10">
+              <h3 class="alt-h3 mb-1">Find the right tools</h3>
+              <p class="mb-0">Browse and buy apps from GitHub Marketplace with your GitHub account. Find the tools you like or discover new favoritesâ€”then start using them in minutes. <span class="text-blue">Learn about integrations.</span></p>
+            </div>
+            <svg class="octicon octicon-triangle-right text-blue" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="py-7 py-md-8 py-lg-9 border-top">
+  <div class="container-lg p-responsive">
+    <h6 class="alt-h4 text-normal text-gray text-center">
+      Security and administration
+    </h6>
+    <h2 class="alt-h1 mt-3 mb-2 text-center">
+      Boxes? Check.
+    </h2>
+    <p class="lead text-center col-md-8 mx-auto">
+      We worry about your administrative and security needs so you donâ€™t have to. From flexible hosting to authentication options, GitHub can help you meet your teamâ€™s requirements.
+    </p>
+
+    <p class="text-center mb-5">
+      <a href="/business" class="btn btn-large btn-outline mx-auto">
+        Learn about GitHub for Business
+      </a>
+    </p>
+
+    <div class="d-md-flex flex-items-center flex-row-reverse mt-6 mb-3">
+      <div class="col-md-6 mx-auto px-5 pr-md-0 text-center">
+        <img src="https://assets-cdn.github.com/images/modules/site/home-illo-business.png" alt="Security and administration" class="width-fit mb-4">
+      </div>
+      <div class="col-md-6 mx-auto text-md-left f5 p-sm-6">
+        <h3 class="alt-h3 mb-1">Code security</h3>
+        <p class="mb-3 mb-md-5">
+          Prevent problems before they happen. Protected branches, signed commits, and required status checks protect your work and help you maintain a high standard for your code.
+        </p>
+
+        <h3 class="alt-h3 mb-1 mt-sm-6">Access controlled</h3>
+        <p class="mb-3 mb-md-5">
+          Encourage teams to work together while limiting access to those who need it with granular permissions and authentication through SAML/SSO and LDAP.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-7 mx-auto clearfix p-4 border rounded-1 pt-5">
+      <div class="float-left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="mr-4" width="64px"><title>1clr-code-hosting</title><path d="M27 13h-9a1 1 0 0 0 0 2h9a1 1 0 0 0 0-2zM42 12a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zM46 12a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zM27 28h-9a1 1 0 0 0 0 2h9a1 1 0 0 0 0-2zM42 31a1 1 0 0 0 1-1v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1zM46 31a1 1 0 0 0 1-1v-2a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z" fill="#23292f"></path><path d="M50 44h-1a13 13 0 0 0-4.68-9H48a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3h-5v-3h5a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H16a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h5v3h-5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h11.72a13 13 0 0 0-3.79 5.21A7 7 0 0 0 13.28 44 6 6 0 0 0 14 56h36a6 6 0 0 0 0-12zM15 17v-6a1 1 0 0 1 1-1h32a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H16a1 1 0 0 1-1-1zm8 3h18v3H23zm-7 13a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h32a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-7a12.9 12.9 0 0 0-10 0H16zm34 21H14a4 4 0 1 1 .09-8 1 1 0 0 0 1-.83 5 5 0 0 1 8.6-2.55 1 1 0 0 0 1.7-.42A11 11 0 0 1 47 45a1 1 0 0 0 1 1h2a4 4 0 0 1 0 8z" fill="#23292f"></path></svg>
+
+      </div>
+      <div class="overflow-hidden">
+        <h4 class="alt-h4">Hosted where you need it</h4>
+        <p class="f5 mr-2">Securely and reliably host your work on GitHub.com. Or, deploy GitHub Enterprise on your own servers or in a private cloud using Amazon Web Services, Azure or Google Cloud Platform.</p>
+        <p>
+          <a href="/pricing">Compare plans<span class="no-wrap"><svg height="16" class="octicon octicon-chevron-right ml-2 v-align-text-bottom" viewBox="0 0 8 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg></span></a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="py-7 py-md-8 py-lg-9 border-top">
+  <div class="container-lg p-responsive text-center">
+    <div class="col-md-8 py-md-6 mx-auto">
+      <h6 class="alt-h4 text-normal text-gray">
+        Integrations
+      </h6>
+      <h2 class="alt-h1 lh-condensed mt-3 mb-2">
+        Build on GitHub
+      </h2>
+      <p class="lead mb-2 pb-md-4 px-md-3">
+        Customize your process with GitHub apps and an intuitive API. Integrate the tools you already use or discover new favorites to create a happier, more efficient way of working.
+      </p>
+      <p class="f4 text-center mb-6">
+        <a href="/features/integrations" class="btn btn-large btn-outline mx-auto">Learn about integrations</a>
+      </p>
+    </div>
+
+    <div class="apps-cluster d-flex flex-wrap flex-justify-center pb-6">
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #553958;" aria-label="Slack"><img src="https://assets-cdn.github.com/images/modules/site/integrators/slackhq.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #364e98;" aria-label="ZenHub"><img src="https://assets-cdn.github.com/images/modules/site/integrators/zenhubio.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #eff9f9;" aria-label="Travis CI"><img src="https://assets-cdn.github.com/images/modules/site/integrators/travis-ci.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #5fb57d;" aria-label="Atom"><img src="https://assets-cdn.github.com/images/modules/site/integrators/atom.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #022531;" aria-label="Circle CI"><img src="https://assets-cdn.github.com/images/modules/site/integrators/circleci.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #f3f6fb;" aria-label="Codeship"><img src="https://assets-cdn.github.com/images/modules/site/integrators/codeship.png" alt="" class="CircleBadge-icon"></div>
+      <div class="CircleBadge CircleBadge--medium CircleBadge--feature hide-sm tooltipped tooltipped-s tooltipped-no-delay" style="background-color: #303030;" aria-label="Code Climate"><img src="https://assets-cdn.github.com/images/modules/site/integrators/codeclimate.png" alt="" class="CircleBadge-icon"></div>
+    </div>
+
+    <div class="col-md-8 py-md-6 mx-auto">
+      <p class="my-2 alt-text-small col-sm-8 col-md-6 mx-auto">
+        Sometimes, thereâ€™s more than one tool for the job. Why not try something new?
+      </p>
+      <p>
+        <a href="/marketplace">Browse GitHub <span class="no-wrap">Marketplace<svg height="16" class="octicon octicon-chevron-right ml-2 v-align-text-bottom" viewBox="0 0 8 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg></span></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="py-7 py-md-8 py-lg-9 border-top">
+  <div class="container-lg p-responsive">
+    <h6 class="alt-h4 text-normal text-gray text-center">
+      Community
+    </h6>
+    <h2 class="alt-h1 mt-3 mb-4 lh-condensed text-center">
+      Welcome home, <br>developers
+    </h2>
+      <p class="lead text-center col-md-8 mx-auto">
+        GitHub is home to the worldâ€™s largest community of developers and their&nbsp;projects...
+      </p>
+  </div>
+
+    <div class="d-flex flex-nowrap flex-items-stretch flex-lg-items-start overflow-auto px-2 py-6 my-6">
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /open-source/stories/ariya " class="Story-link  d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/ariya.png" alt="Ariya" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Ariya Hidayat</h1>
+        <p class="f6 text-gray">
+            PhantomJS maintainer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /open-source/stories/freakboy3742 " class="Story-link  d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/freakboy3742.png" alt="Freakboy3742" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Russell Keith-Magee</h1>
+        <p class="f6 text-gray">
+            PyBee maintainer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /business/customers/mailchimp " class="Story-link Story-link--customer d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/customers/mailchimp.png" alt="Mailchimp" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">MailChimp</h1>
+        <p class="f6 text-gray">
+            Marketing customer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /open-source/stories/kris-nova " class="Story-link  d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/kris-nova.png" alt="Kris nova" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Kris Nova</h1>
+        <p class="f6 text-gray">
+            Kubernetes/kops maintainer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /open-source/stories/yyx990803 " class="Story-link  d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/yyx990803.png" alt="Yyx990803" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Evan You</h1>
+        <p class="f6 text-gray">
+            Vue maintainer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /business/customers/mapbox " class="Story-link Story-link--customer d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/customers/mapbox.png" alt="Mapbox" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Mapbox</h1>
+        <p class="f6 text-gray">
+            Software customer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+      <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+  <a href=" /open-source/stories/jessfraz " class="Story-link  d-block d-lg-flex height-full rounded-1 box-shadow-extra-large">
+    <div class="col-lg-6 position-relative">
+      <img class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/jessfraz.png" alt="Jessfraz" />
+    </div>
+    <div class="d-lg-flex flex-items-center col-lg-6">
+      <div class="width-full text-center p-3 py-lg-0">
+        <h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Jess Frazelle</h1>
+        <p class="f6 text-gray">
+            Kubernetes, previously Docker maintainer
+        </p>
+      </div>
+    </div>
+  </a>
+</article>
+
+    </div>
+
+  <div class="container-lg p-responsive">
+      <p class="lead text-center col-md-8 mx-auto pb-md-6">
+        ...whether youâ€™re making your first commit or sending a Rover to Mars, thereâ€™s room for you here, too.
+      </p>
+
+    <div class="gutter-md">
+      <div class="communitystats position-relative">
+        <a href="/open-source" class="d-inline-block summarylink">
+          <div class="circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-orange box-shadow-extra-large">
+            <span class="d-block f0-light text-white lh-condensed-ultra mb-2">85M<sup class="f2-light">*</sup></span>
+            <span class="f6 text-white">repositories worldwide</span>
+          </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+            <p class="col-10 mb-0">GitHubâ€™s users create and maintain influential technologies alongside the worldâ€™s largest <span class="text-orange-light">open source&nbsp;community</span>.</p>
+            <svg class="octicon octicon-triangle-right text-orange-light" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+
+        <a href="/personal" class="d-inline-block summarylink">
+          <div class="circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-blue box-shadow-extra-large">
+            <span class="d-block f0-light text-white lh-condensed-ultra mb-2">28M<sup class="f2-light">*</sup></span>
+            <span class="f6 text-white">developers worldwide</span>
+          </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+            <p class="col-10 mb-0"><span class="text-blue">Developers</span> use GitHub for personal projects, from experimenting with new programming languages to hosting their lifeâ€™s work.</p>
+            <svg class="octicon octicon-triangle-right text-blue" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+
+        <a href="/business" class="d-inline-block summarylink">
+          <div class="circle d-flex flex-column flex-justify-center text-center p-4 mx-auto mt-6 mb-3 m-md-3 bg-purple box-shadow-extra-large">
+            <span class="d-block f1-light text-white lh-condensed-ultra mb-2">1.8M<sup class="f3-light">*</sup></span>
+            <span class="f6 text-white">businesses and organizations worldwide</span>
+          </div>
+          <div class="summarylink-btn d-flex flex-justify-between flex-items-center f5 text-gray-dark rounded-1 p-sm-4">
+            <p class="col-10 mb-0"><span class="text-purple">Businesses</span> of all sizes use GitHub to support their development process and to securely build software.</p>
+            <svg class="octicon octicon-triangle-right text-purple" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+          </div>
+        </a>
+
+        <div class="mt-6 ml-md-4 text-gray-light f6">
+          * As of June 2018
         </div>
       </div>
     </div>
   </div>
-  <div class="" id="Fragment_ResourceBand" data-fragmentname="ResourceBand">
-    <div data-fragmentname="ResourceBand" id="Fragment_ResourceBand">
-      <div>
-        <div>
-          <div data-fragmentname="ResourceBandcontent" id="Fragment_ResourceBandcontent">
-            <div class="RichText">
-              <div class="resourceband">
-                <div class="resourceblock">
-                  <p>
-                    <a href="https://www.visualstudio.com/subscriptions/">
-                      <img alt="Subscriptions" id="Subscriptions" src="https://i-msdn.sec.s-msft.com/dynimg/IC858070.png" title="Subscriptions" xmlns="http://www.w3.org/1999/xhtml" />
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://www.visualstudio.com/subscriptions/">Subscriptions</a>
-                  </p>
-                </div>
-                <div class="resourceblock">
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/developer-centers-msdn">
-                      <img alt="Dev Centers" id="DevCenters" src="https://i-msdn.sec.s-msft.com/dynimg/IC858071.png" title="Dev Centers" xmlns="http://www.w3.org/1999/xhtml" />
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/developer-centers-msdn">Dev Centers</a>
-                  </p>
-                </div>
-                <div class="resourceblock">
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/library/">
-                      <img alt="MSDN Library" id="Library" src="https://i-msdn.sec.s-msft.com/dynimg/IC858074.png" title="MSDN Library" xmlns="http://www.w3.org/1999/xhtml" />
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/library/">Library</a>
-                  </p>
-                </div>
-                <div class="resourceblock">
-                  <p>
-                    <a href="https://www.visualstudio.com">
-                      <img alt="Visual Studio" id="VisualStudio" src="https://i-msdn.sec.s-msft.com/dynimg/IC858073.png" title="Visual Studio" xmlns="http://www.w3.org/1999/xhtml" />
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://www.visualstudio.com">Visual Studio</a>
-                  </p>
-                </div>
-                <div class="resourceblock">
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/magazine/">
-                      <img alt="MSDN Magazine" id="MSDNMag" src="https://i-msdn.sec.s-msft.com/dynimg/IC858072.png" title="MSDN Magazine" xmlns="http://www.w3.org/1999/xhtml" />
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://msdn.microsoft.com/en-us/magazine/">MSDN Magazine</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+
+</div>
+
+  <div class="py-7 py-md-8 py-lg-9 bg-gray-dark">
+    <div class="container-lg p-responsive text-white text-center">
+      <h2 class="alt-h2">
+        Get started for free &mdash; join the millions of developers already using GitHub to share their code, work together, and build amazing things.
+      </h2>
+    </div>
+    <div class="container-xl p-responsive py-6 mt-lg-6">
+      <form class="home-hero-signup js-signup-form" autocomplete="off" action="/join" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="moDUAKL7BcxlN4bLdBUJ27me6VfSwJIhe7f0E9aUX6VWruD3AYS8G36vuVmOpzLbAt/BvmfWPNKpjbDjekbsRw==" />        <div class="d-lg-flex flex-wrap flex-lg-nowrap flex-justify-between">
+          <dl class="form-group col-12 col-sm-8 col-lg-3 mx-auto mt-0 mx-lg-0 mb-3 mb-lg-0 px-3">
+            <dt class="input-label sr-only">
+              <label class="form-label text-gray f5" for="user[login]-footer">Username</label>
+            </dt>
+            <dd>
+              <auto-check src="/signup_check/username" csrf="S4eR1byOkcHrDckyoWWTR2N/rwe2RNNslYkh8N0ydscDk6N1J96gGyTNhfjCMDRfsFlgLJbw1ta/IYwmKXR0ow==">
+                <input type="text" name="user[login]" id="user[login]-footer" class="form-control form-control-lg input-block input-lg" placeholder="Pick a username">
+              </auto-check>
+            </dd>
+          </dl>
+
+          <dl class="form-group col-12 col-sm-8 col-lg-3 mx-auto mt-0 mx-lg-0 mb-3 mb-lg-0 px-3">
+            <dt class="input-label sr-only">
+              <label class="form-label text-gray f5" for="user[email]-footer">Email</label>
+            </dt>
+            <dd>
+              <auto-check src="/signup_check/email" csrf="EIFTwf/SP6ArreaQNNw7mvzlncUDBB+kPbvdHzldzokEd5unpfhOxraSOLUjMU0UDhBWmF3fBeldAqsk6zEDVw==">
+                <input type="text" name="user[email]" id="user[email]-footer" class="form-control form-control-lg input-block input-lg js-email-notice-trigger" placeholder="Your email address">
+              </auto-check>
+            </dd>
+          </dl>
+
+          <dl class="form-group col-12 col-sm-8 col-lg-3 mx-auto mt-0 mx-lg-0 mb-3 mb-lg-0 px-3">
+            <dt class="input-label sr-only">
+              <label class="d-none form-label text-gray f5" for="user[password]-footer">Password</label>
+            </dt>
+            <dd>
+              <auto-check src="/signup_check/password" csrf="rFyFkLTm5IUiseNMUV8dY3rXmIZstirKnz/7lKIxgBNhiRKqgPdVRG65LJoAjyylYlHT1YEPd0zTD2QMFZIsfg==">
+                <input type="password" name="user[password]" id="user[password]-footer" class="form-control form-control-lg input-block input-lg" placeholder="Create a password">
+              </auto-check>
+            </dd>
+          </dl>
+
+          <input type="hidden" name="source" class="js-signup-source" value="form-home">
+          <input type="text" name="required_field_f40c" id="required_field_f40c" hidden="hidden" class="form-control" />
+<input type="hidden" name="timestamp" value="1530570966014" class="form-control" />
+<input type="hidden" name="timestamp_secret" value="b942e6a33a1e5ad9f354a6ff523bdc76d6de9796a8e8d176da9385424db94584" class="form-control" />
+
+          <div class="col-12 col-sm-8 col-lg-3 mx-auto mx-lg-0 mb-3 mb-lg-0 px-3">
+            <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Signup, Attempt, location:teams;">Sign up for GitHub</button>
           </div>
         </div>
-      </div>
+        <p class="form-control-note text-center mt-6">
+          By clicking &ldquo;Sign up for GitHub&rdquo;, you agree to our
+          <a class="text-white" href="https://help.github.com/terms" target="_blank">terms of service</a> and
+          <a class="text-white" href="https://help.github.com/privacy" target="_blank">privacy statement</a>. <span class="js-email-notice">Weâ€™ll occasionally send you account related emails.</span>
+        </p>
+</form>    </div>
+  </div>
+
+
+  <div class="modal-backdrop js-touch-events"></div>
+
+  </div>
+
+        <div class="footer container-lg p-responsive mt-6" role="contentinfo">
+  <div class="d-flex flex-wrap py-5 mb-5">
+    <div class="col-12 col-md-2 mb-3">
+      <svg height="24" class="octicon octicon-logo-github" viewBox="0 0 45 16" version="1.1" width="67" aria-hidden="true"><path fill-rule="evenodd" d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 0 0-.146-.18zm23.696-2.2c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"/></svg>
+      <p class="text-gray alt-text-small">
+        &copy; 2018
+      </p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-3 pr-3">
+      <h4 class="mb-2">Features</h4>
+      <ul class="list-style-none text-gray">
+        <li class="lh-condensed mb-2"><a href="/features#code-review" class="muted-link alt-text-small">Code review</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#project-management" class="muted-link alt-text-small">Project management</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#integrations" class="muted-link alt-text-small">Integrations</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#team-management" class="muted-link alt-text-small">Team management</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#social-coding" class="muted-link alt-text-small">Social coding</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#documentation" class="muted-link alt-text-small no-wrap">Documentation</a></li>
+        <li class="lh-condensed mb-2"><a href="/features#code-hosting" class="muted-link alt-text-small">Code hosting</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-3 pr-3">
+      <h4 class="mb-2">Platform</h4>
+      <ul class="list-style-none">
+        <li class="lh-condensed mb-2"><a href="https://atom.io" class="muted-link alt-text-small">Atom</a></li>
+        <li class="lh-condensed mb-2"><a href="http://electron.atom.io/" class="muted-link alt-text-small">Electron</a></li>
+        <li class="lh-condensed mb-2"><a href="https://desktop.github.com/" class="muted-link alt-text-small">GitHub Desktop</a></li>
+        <li class="lh-condensed mb-2"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api" class="muted-link alt-text-small">Developer API</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-3 pr-3">
+      <h4 class="mb-2">Community</h4>
+      <ul class="list-style-none">
+        <li class="lh-condensed mb-2"><a href="/personal" class="muted-link alt-text-small">Personal</a></li>
+        <li class="lh-condensed mb-2"><a href="/open-source" class="muted-link alt-text-small">Open source</a></li>
+        <li class="lh-condensed mb-2"><a href="/business" class="muted-link alt-text-small">Business</a></li>
+        <li class="lh-condensed mb-2"><a href="https://education.github.com/" class="muted-link alt-text-small">Education</a></li>
+        <li class="lh-condensed mb-2"><a href="/business/customers" class="muted-link alt-text-small">Customers</a></li>
+        <li class="lh-condensed mb-2"><a href="https://partner.github.com/" class="muted-link alt-text-small">Partners</a></li>
+        <li class="lh-condensed mb-2"><a href="https://community.github.com/" class="muted-link alt-text-small">Sponsorships</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-3 pr-3">
+      <h4 class="mb-2">Company</h4>
+      <ul class="list-style-none">
+        <li class="lh-condensed mb-2"><a data-ga-click="Footer, go to about, text:about" class="muted-link alt-text-small" href="https://github.com/about">About</a></li>
+        <li class="lh-condensed mb-2"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog" class="muted-link alt-text-small">Blog</a></li>
+        <li class="lh-condensed mb-2"><a href="/about/careers" class="muted-link alt-text-small">Careers</a></li>
+        <li class="lh-condensed mb-2"><a href="/about/press" class="muted-link alt-text-small">Press</a></li>
+        <li class="lh-condensed mb-2"><a href="/about/leadership" class="muted-link alt-text-small">Leadership</a></li>
+        <li class="lh-condensed mb-2"><a href="https://shop.github.com" class="muted-link alt-text-small">Shop</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-3 pr-3">
+      <h4 class="mb-2">Resources</h4>
+      <ul class="list-style-none">
+        <li class="lh-condensed mb-2"><a data-ga-click="Footer, go to contact, text:contact" class="muted-link alt-text-small" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="lh-condensed mb-2"><a href="https://github.community" data-ga-click="Footer, go to community, text:community" class="muted-link alt-text-small">Community Forum</a></li>
+        <li class="lh-condensed mb-2"><a data-ga-click="Footer, go to help, text:help" class="muted-link alt-text-small" href="https://help.github.com">Help</a></li>
+        <li class="lh-condensed mb-2"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status" class="muted-link alt-text-small">Status</a></li>
+        <li class="lh-condensed mb-2"><a href="/site/terms" data-ga-click="Footer, go to terms, text:terms" class="muted-link alt-text-small">Terms</a></li>
+        <li class="lh-condensed mb-2"><a href="/site/privacy" data-ga-click="Footer, go to privacy, text:privacy" class="muted-link alt-text-small">Privacy</a></li>
+        <li class="lh-condensed mb-2"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security" class="muted-link alt-text-small">Security</a></li>
+        <li class="lh-condensed mb-2"><a href="https://services.github.com/" class="muted-link alt-text-small">Training</a></li>
+      </ul>
     </div>
   </div>
-  <div class="" id="Fragment_FeaturesHeading" data-fragmentname="FeaturesHeading">
-    <div class="RichText">
-      <h2>Build, design, develop</h2>
+</div>
+
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You canâ€™t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" integrity="sha512-wIuAKDhvxe9wCaNR1tzCk3rtl+wXEWC28rmRpzmx0h98VEeWC6Y3xCWV1xAW6NP6eQQX+x8ZGhW6Sdut+mLRuw==" type="application/javascript" src="https://assets-cdn.github.com/assets/compat-a48960bafc17c30572990bbab3664e9c.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-uM69WMiXMBe+fHB1eUDOoIAILOyoqkWpoQuBK/UHhCfk2lLxfinKPu28i4+Iu+v3eoUiPJnAAbzKzvQjVJ8tWQ==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-c3a7cd038fac31dc42fd60a02fd6e01a.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-XrBFh268yZdWIQR1H9MvUzgSkMJ+lelyWBdAeb+uQKnmAVjUXcAeoE2Zde/+Uhpdcy497goDyoFGRTvdSfVSgA==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-c1b09bae1686db677d92492f5738ee9a.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
     </div>
-  </div>
-  <div id="Fragment_Features" data-fragmentname="Features">
-    <div class="DetailedMediaList">
-      <div class="" id="Fragment_ContentInclude_1" data-fragmentname="ContentInclude_1">
-        <div>
-          <div>
-            <div data-fragmentname="Feature1" id="Fragment_Feature1">
-              <div class="block type4 topImage ">
-                <div class="label">docs.microsoft.com</div>
-                <div class="image">
-                  <a href="https://docs.microsoft.com/">
-                    <img alt="docs.microsoft.com our new unified technical documentation experience" id="LampBooks" src="https://i-msdn.sec.s-msft.com/dynimg/IC871805.png" title="docs.microsoft.com our new unified technical documentation experience" xmlns="http://www.w3.org/1999/xhtml" />
-                  </a>
-                </div>
-                <div class="textContent">
-                  <div class="link">
-                    <a href="https://docs.microsoft.com/">docs.microsoft.com: Our new unified technical documentation experience</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="" id="Fragment_ContentInclude_2" data-fragmentname="ContentInclude_2">
-        <div>
-          <div>
-            <div data-fragmentname="Feature2" id="Fragment_Feature2">
-              <div class="block type4 topImage ">
-                <div class="label">Channel 9</div>
-                <div class="image">
-                  <a href="https://channel9.msdn.com/">
-                    <img alt="" src="https://i-msdn.sec.s-msft.com/dynimg/IC872367.png" xmlns="http://www.w3.org/1999/xhtml" />
-                  </a>
-                </div>
-                <div class="textContent">
-                  <div class="link">
-                    <a href="https://channel9.msdn.com/">Channel 9: Videos for developers from the people building Microsoft products &amp; services</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="" id="Fragment_ContentInclude_3" data-fragmentname="ContentInclude_3">
-        <div>
-          <div>
-            <div data-fragmentname="Feature3" id="Fragment_Feature3">
-              <div class="block type4 topImage ">
-                <div class="label">Visual Studio</div>
-                <div class="image">
-                  <a href="https://www.visualstudio.com/">
-                    <img alt="Visual Studio IDE, Code Editor, Team Services, &amp; Mobile Center" id="VisualStudioGlassesPurple" src="https://i-msdn.sec.s-msft.com/dynimg/IC856887.png" title="Visual Studio IDE, Code Editor, Team Services, &amp; Mobile Center" xmlns="http://www.w3.org/1999/xhtml" />
-                  </a>
-                </div>
-                <div class="textContent">
-                  <div class="link">
-                    <a href="https://www.visualstudio.com/">Visual Studio IDE, Code Editor, Team Services, &amp; Mobile Center</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-</div>
-            </div>
-            
-
-
-<input name="__RequestVerificationToken" type="hidden" value="4yrDUtNczLvbnKQ-NE5dkeU-QwJPIFAgUhzW4M8js2ThU4nYF-37E3nZfRSkjqs0Wtlz1iTt2cxdW2a1JVMQF6RL1XM1" />
-<input id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/en-us/library/feedback/add/dn308572" />
-<input id="isTopicRated" type="hidden" value="false" />
-
-            
-
-    
-    <link type="text/css" rel="stylesheet" />
-    
-        
-    <div id="ux-footer" class="" style="" dir="ltr" ms.pgarea="footer">
-            
-                
-            <div id="footerSock" class="">
-                <div id="footerSockInner">
-
-                        <div class="footerSockLeft"><div data-fragmentName="SocialLinks" id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <div class="linkListTitle">Follow us</div>
-    <ul class="links">
-      <li>
-        <a href="https://www.facebook.com/MicrosoftDeveloper/" target="_blank" id="SocialLinks_2151_19" class="facebook" xmlns="http://www.w3.org/1999/xhtml">https://www.facebook.com/MicrosoftDeveloper/</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/msdev" target="_blank" id="SocialLinks_2151_20" class="twitter" xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdev</a>
-      </li>
-      <li>
-        <a href="https://plus.google.com/111221966647232053570" target="_blank" id="SocialLinks_2151_21" class="googlePlus" xmlns="http://www.w3.org/1999/xhtml">https://plus.google.com/111221966647232053570</a>
-      </li>
-    </ul>
-  </div>
-</div></div>
-
-                        <div class="footerSockRight"><div data-fragmentName="Newsletter" id="Fragment_Newsletter" xmlns="http://www.w3.org/1999/xhtml">
-  <a href="https://msdn.microsoft.com/flashnewsletter" title="Sign up for the MSDN Newsletter" id="Newsletter_2148_19" xmlns="http://www.w3.org/1999/xhtml">Sign up for the MSDN Newsletter</a>
-</div></div>
-                    <div class="footerSockCenter">
-                            <a name="feedback"></a>
-
-<div class="rating">
-    <div id="ratingSection1">
-        <div class="title">
-            Is this page helpful?
-        </div>
-        <div class="description">
-            Your feedback about this content is important.<br />Let us know what you think.
-        </div>
-        <div class="buttons">
-            <button class="button" id="ratingYes" aria-label="Yes, this page was helpful">Yes</button>
-            <button class="button" id="ratingNo" aria-label="No, this page was not helpful">No</button>
-        </div>
-        <input id="ratingValue" type="hidden" value="" />
-    </div>
-    <div id="ratingSection2">
-        <div class="title left">
-            Additional feedback?
-        </div>
-        <textarea id="ratingText" rows="6" cols="" maxlength="1500"></textarea>
-        <div class="right">
-            <div class="counter">
-                <span id="feedbackTextCounter">1500</span> characters remaining
-            </div>
-            <div class="buttons">
-                <button class="button" id="ratingSubmit" aria-label="Submit my additional feedback">Submit</button>
-                <button class="button" id="ratingSkipThis" aria-label="Skip additional feedback">Skip this</button>
-            </div>
-        </div>
-    </div>
-    <div id="ratingSection3">
-        <div class="title">
-            Thank you!
-        </div>
-        <div class="description">
-            We appreciate your feedback.
-        </div>
-    </div>
-    
-    
-    <div id="contentFeedbackQAContainer" style="display: none;"></div>
-</div>
-    
-                                            </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            
-
-        <footer class="top" role="navigation" aria-label="footer">
-            <div data-fragmentName="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <h4 class="linkListTitle">Dev centers</h4>
-    <ul class="links">
-      <li>
-        <a href="https://developer.microsoft.com/en-us/windows" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
-      </li>
-      <li>
-        <a href="https://dev.office.com/" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
-      </li>
-      <li>
-        <a href="https://www.visualstudio.com/" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
-      </li>
-      <li>
-        <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
-      </li>
-      <li>
-        <a href="https://msdn.microsoft.com/developer-centers-msdn" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">More...</a>
-      </li>
-    </ul>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
   </div>
 </div>
-            <div id="rightLinks">
-                <div data-fragmentName="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <h4 class="linkListTitle">Learning resources</h4>
-    <ul class="links">
-      <li>
-        <a href="https://mva.microsoft.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
-      </li>
-      <li>
-        <a href="https://channel9.msdn.com/" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Channel 9</a>
-      </li>
-      <li>
-        <a href="https://msdn.microsoft.com/magazine/" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">MSDN Magazine</a>
-      </li>
-    </ul>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
   </div>
 </div>
-                <div data-fragmentName="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <h4 class="linkListTitle">Community</h4>
-    <ul class="links">
-      <li>
-        <a href="https://social.msdn.microsoft.com/forums/en-us/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Forums</a>
-      </li>
-      <li>
-        <a href="https://blogs.msdn.microsoft.com/developer-tools/" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Blogs</a>
-      </li>
-      <li>
-        <a href="https://www.codeplex.com/" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
-      </li>
-    </ul>
-  </div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
 </div>
-                <div data-fragmentName="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <h4 class="linkListTitle">Support</h4>
-    <ul class="links">
-      <li>
-        <a href="https://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Self support</a>
-      </li>
-    </ul>
-  </div>
-</div>
-                <div data-fragmentName="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <h4 class="linkListTitle">Programs</h4>
-    <ul class="links">
-      <li>
-        <a href="https://bizspark.microsoft.com/Startups/Index" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (for startups)</a>
-      </li>
-      <li>
-        <a href="https://imagine.microsoft.com/en-us" id="CenterLinks4_2151_22" xmlns="http://www.w3.org/1999/xhtml">Microsoft Imagine (for students)</a>
-      </li>
-    </ul>
-  </div>
-</div>
-            </div>
-        </footer>
-
-        <footer class="bottom" role="contentinfo">
-            <span class="localeContainer">
-                
-    <form class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/en-us/selectlocale-dmc">
-        <input type="hidden" name="fromPage" value="https%3a%2f%2fmsdn.microsoft.com%2fen-us%2fdn308572" />
-        <a href="#" onclick="$('#selectLocaleForm').submit();return false;" title="Change your language">United States (English)</a>
-    </form>
 
 
-            </span>
-
-            <div data-fragmentName="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
-  
-  <div class="linkList">
-    <ul class="links horizontal">
-      <li>
-        <a href="https://msdn.microsoft.com/en-us/flashnewsletter" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Newsletter</a>
-      </li>
-      <li>
-        <a href="https://privacy.microsoft.com/privacystatement" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Privacy &amp; cookies</a>
-      </li>
-      <li>
-        <a href="https://msdn.microsoft.com/en-us/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Terms of use</a>
-      </li>
-      <li>
-        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Trademarks</a>
-      </li>
-    </ul>
-  </div>
-</div>
-            <span class="logoLegal">
-                <span class="logoSpan clip67x13" role="img" tabindex="0" aria-label="microsoft logo">
-                    <img alt="logo" class="logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636626356002217936" />
-                </span>
-                <span class="copyright">Â© 2018 Microsoft</span>
-            </span>
-        </footer>
-    </div>
-    
-
-        </div>
-        
-
-<![CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use â€“ http://www.asp.net/ajaxlibrary/CDN.ashx. ]]>
-        
-    
-    
-
-        
-    <script type="text/javascript" class="mtps-injected">
-/*<![CDATA[*/
-(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
-MTPS.injectScripts([
-	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"ttf\": \"https://i-msdn.sec.s-msft.com\"\r\n});\r\n/**/" },
-	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js" },
-	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery-ui-1.10.3.custom.min,0:ABTestControl,1:MobileInit;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1\u0026amp;hashKey=5B0732A5734C65D560A1F15E0B620AC7\u0026amp;v=47B035ED9D95DB29B83894A98E2BA011" },
-	{ url: "https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.3.0/jquery.mobile-1.3.0.min.js" },
-	{ url: "https://uhf.microsoft.com/mscc/statics/mscc-0.4.0.min.js" },
-	{ url: "https://i2-msdn.sec.s-msft.com/Areas/Epx/Themes/Base/Content/JumpRedirect.js" },
-	{ url: "https://docs.microsoft.com/msdn-files/feeds/MSDN/en-us/home/home_pt.js" }
-]);
-
-/*]]>*/
-</script></body>
+  </body>
 </html>
+
