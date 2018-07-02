@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicBinding", "DynamicBinding\DynamicBinding.csproj", "{97194FC1-DE23-40BD-8D51-BC67BA053EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03793065-0CC5-41D4-8E2C-0BBFCB5D8F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97194FC1-DE23-40BD-8D51-BC67BA053EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97194FC1-DE23-40BD-8D51-BC67BA053EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97194FC1-DE23-40BD-8D51-BC67BA053EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97194FC1-DE23-40BD-8D51-BC67BA053EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E561D898-1C87-40A4-9675-7217826BF224}
+		SolutionGuid = {39CB62B2-FD87-48D0-9D96-87D7E26E1A11}
 	EndGlobalSection
 EndGlobal
