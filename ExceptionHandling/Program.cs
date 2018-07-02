@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ExceptionHandling
 {
@@ -6,23 +7,26 @@ namespace ExceptionHandling
     {
         static void Main(string[] args)
         {
+            StreamReader streamReader = null;
+               // var streamReader = new StreamReader("C:\\Users\\user\\Documents\\udemy\\csharpadv\\myFile.txt");
             try
             {
-                var myCalc = new Calculator();
-                Console.WriteLine(myCalc.Divide(5, 0));
+                streamReader = new StreamReader("C:\\Users\\user\\Documents\\udemy\\csharpadv\\myFile.txt");
+                Console.WriteLine(streamReader.ReadLine());
+                // you can manually throw an exception, even if nothing's really wrong:
+                throw new System.Exception("what the hell!");
             }
-            // put an argument next to Exception so we can use the thrown exception in our msg
-            // put the most specific catches at the top and the most generic catches below
-            // note that these are all overloads with slightly different signatures
-            catch (System.DivideByZeroException ex)
-            {
-                Console.WriteLine("I'm pretty sure you can't " + ex.Message);
-            }
-            // most generic catch (catches System.Exception, the parent class of all exceptions)
             catch (Exception ex)
             {
                 Console.WriteLine("Sh** just got f****d by " + ex.Message);
-                //throw new System.UnauthorizedAccessException().GetBaseException();
+            }
+            // the finally block ALWAYS GETS RUN after try or catch; doesn't matter if
+            // the try succeeds or if the catch catches it. This is used for garbage
+            // collection on unmanaged code (namely, reading files from disk, databases, network, etc)
+            finally
+            {
+                Console.WriteLine("collecting garbaj...");
+                streamReader?.Dispose(); // frees any caches resources related to reading the file 
             }
         }
     }
