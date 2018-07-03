@@ -43,22 +43,26 @@ namespace Async
         // all async methods have 'async' modifier. The 'Task' return type is 'Task'
         // for a void (no return), and Task<string> or similar for a return type
         // Don't forget to put the await keywords in front of your <METHOD>async.()
-        public async Task DownloadHtmlAsync(string url)
+        public async Task<string> DownloadHtmlAsync(string url)
         {
             var webClient = new WebClient();
             var html = await webClient.DownloadStringTaskAsync(url);
 
+            return html;
+            /* decided to not write it to a file cuz that's laem
             using (var sr = new StreamWriter("C:\\Users\\user\\Documents\\udemy\\csharpadv\\out.txt"))
             {
                 await sr.WriteAsync(html);
             }
+            */
         }
 
+        // IMPORTANT!! the await modifier can ONLY be used in a method with the async modifier
         private async void myButt_Click(object sender, RoutedEventArgs e)
         {
-            await DownloadHtmlAsync("http://www.github.com");
+            var output = await DownloadHtmlAsync("http://www.github.com");
             Console.WriteLine("clicked my butt!");
-            myLabel.Content = "finished downloading!";
+            myLabel.Content = output;
         }
     }
 }

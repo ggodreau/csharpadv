@@ -11,11 +11,11 @@
                 Click="myButt_Click" 
                 Height="50" 
                 Width="100" 
-                x:Name="myButt">
+                x:Name="myButt" Margin="343,48,350.333,322.667">
                 click to download
         </Button>
         <Label x:Name="myLabel"
-               Margin="315,256,317.333,123.667"
+               Margin="54,122,31.333,29.667"
                Content="click to download ^"/>
     </Grid>
 </Window>
